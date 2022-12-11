@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marina Zilkina | FullStack Web Developer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="pic">
+            <div style="position: relative;">
+                <img style="width: 100%;" src="python.JPG" alt="my_picture">
+                <div class="name">
+                    <h1>Marina Žilkina</h1>
+                    <h5>Full-Stack Developer</h5></div>
+            </div>
+    </div>
+        <div class="education">
+            <h2>Education</h2>
+            <h3>Diploma</h3>
+            <h4>Skill Factory 2022-2033
+                Full-Stack Developer</h4>
+        </div>
+
+        <div class="experience">
+            <h2>Experience</h2>
+            <h4>Junior Developer</h4>
+            <h2>Projects</h2>
+            <a href="https://github.com/MarinaZLKN"><i>You can check my projects here</i></a>
+        </div>
+    </div>
+    <div class="skills">
+        <h2>Tech skills</h2>
+
+        <div>
+            <button type="button" class="collapsible">Python</button>
+            <div class="content">
+                <p>I am like a snake whisperer</p>
+            </div>
+
+            <button type="button" class="collapsible">Django</button>
+            <div class="content">
+                <p>So I heard it's not really popular irw</p>
+            </div>
+
+            <button type="button" class="collapsible">JavaScript</button>
+            <div class="content">
+                <p>The only other language I know better than JS is Estonian, my absolute favorite!</p>
+            </div>
+
+            <button type="button" class="collapsible">HTML, CSS</button>
+            <div class="content">
+                <p>This baby right here shows how skillful I am with those two...</p>
+            </div>
+        </div>
+
+        <h2>Soft skills</h2>
+
+        <p><h3>Open-mindedness</h3></p>
+        <div class="skillContainer">
+            <div class="skill skillA">87%</div>
+        </div>
+
+        <p><h3>Patience</h3></p>
+        <div class="skillContainer">
+            <div class="skill skillB">90%</div>
+        </div>
+
+        <p><h3>Communication</h3></p>
+        <div class="skillContainer">
+            <div class="skill skillC">86%</div>
+        </div>
+
+        <p><h3>Problem-solving</h3></p>
+        <div class="skillContainer">
+            <div class="skill skillD">94%</div>
+        </div>
+
+        <div></div>
+    </div>
+</div>
+
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</div>
+</body>
+</html>
